@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  text-align: center;
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  background: hsl(216, 50%, 16%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  border-radius: 12px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.eth-div {
+  display: flex;
+  gap: 10px;
+  align-self: stretch;
+  justify-content: left;
+}
+
+.clock-div {
+  display: flex;
+  gap: 8px;
+  align-self: stretch;
+  justify-content: right;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 300;
+  color: white;
+  text-align: start;
+}
+
+.description {
+  color: #8bacda;
+  text-align: start;
+  font-weight: 400;
+  padding-bottom: 5px;
+}
+
+.group-paragraph {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.eth-paragraph {
+  font-size: 15px;
+  gap: 8px;
+  text-align: start;
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+.clock-paragraph {
+  font-size: 15px;
+  color: #8bacda;
+}
+
+.footer-creation {
+  color: #8bacda;
+  text-align: start;
+}
+
+.footer-jules {
+  color: hsl(0, 0%, 100%, 0.9);
+}
+
+.avatar-div {
+  display: flex;
+  gap: 18px;
+  padding-bottom: 10px;
+}
+
+.avatar-div img {
+  width: 30px;
+  height: 30px;
+  border: 1.5px solid white;
+  border-radius: 50%;
+}
+
+.line {
+  border-color: hsl(0, 0%, 100%, 0.2);
+}
+
+.overlay img {
+  min-width: 100%;
+  min-height: 100%;
+  display: block;
+  border-radius: 8px;
+}
+
+.hover-eye:hover {
+  opacity: 0.2;
+}
+
+.overlay {
+  border-radius: 8px;
+  background: no-repeat
+    url(/nft-preview-card-component-main/images/icon-view.svg);
+  background-color: hsl(178, 100%, 50%, 0.6);
+  background-position: center;
+  cursor: pointer;
+}
+
+.title:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+.footer-jules:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
